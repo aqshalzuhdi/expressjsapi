@@ -1,0 +1,20 @@
+`Inisialisasi proyek Sequelize akan menghasilkan beberapa file dan direktori yang diperlukan, termasuk direktori models dan file index.js.`
+npx sequelize-cli init
+
+`to generate file for migrate to database/migrations, auto configuration`
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+`for change or add new column, empty configuration`
+npx sequelize-cli migration:generate --name migration_name
+
+`to migrate all table was registered in database/migrations`
+npx sequelize-cli db:migrate
+
+`to undo / rollback table was registered in databases`
+npx sequelize-cli db:migrate:undo / db:migrate:undo:all
+
+`to generate file seeder`
+npx sequelize-cli seed:generate --name demo-user
+
+`to generate value in seeder files`
+npx sequelize-cli db:seed:all
