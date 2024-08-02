@@ -18,3 +18,10 @@ npx sequelize-cli seed:generate --name demo-user
 
 `to generate value in seeder files`
 npx sequelize-cli db:seed:all
+
+`to pull github`
+git pull
+
+`when error 'please commit your changes or stash them before you merge'`
+git reset --hard
+git pull [remote] [branch] -> git pull origin main
